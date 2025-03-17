@@ -1,0 +1,4 @@
+[flake8]
+max-line-length = 1000
+exclude = .venv, myenv, migrations, __pycache__, tests
+ignore = E123, W503, F405, F403
