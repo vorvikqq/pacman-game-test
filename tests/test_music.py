@@ -3,6 +3,10 @@ from unittest.mock import Mock, patch
 import pygame
 from music import MusicController
 
+import os
+os.environ['SDL_AUDIODRIVER'] = 'dummy'
+
+pygame.init()
 
 @pytest.fixture
 def music_controller():
